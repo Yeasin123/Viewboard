@@ -1,0 +1,331 @@
+/* styles.css */
+body {
+     font-family: "League Spartan",
+     sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 13px 0;
+   
+}
+.settings{
+    position: absolute;
+    top:25%;
+    right:2%;
+}
+.main-container {
+    display: flex;
+    height: 85vh;
+    position: relative;
+}
+
+.left-section,
+.middle-section,
+.right-section,
+.last-middle-section {
+    border: 1.6px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.left-section {
+    width: 30%;
+}
+
+.middle-section {
+    width: 30%;
+}
+.last-middle-section{
+    width: 30%;
+}
+.right-section {
+    background-color: #f0f0f0;
+    width: 10%;
+}
+
+.bottom-section {
+    height: 15vh;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-button {
+   width: 150px;
+   padding: 8px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.script-button {
+    width: 150px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background:#198754;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.call-button {
+    width: 150px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #198754;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.convert-button {
+    width: 250px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.resizer {
+    width: 10px;
+    cursor: col-resize;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#resizer-left {
+    left: 30%;
+}
+
+#resizer-right {
+    left: 70%;
+}
+
+.lead-status-button{
+    height: 44px;
+    flex-shrink: 0;
+    border:transparent;
+    color:#fff;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+}
+.lead-info{
+    position: relative;
+}
+.fire-div {
+    position: absolute;
+    right: 23%;
+}
+
+
+.lead-info-text {
+    width: 45%;
+    display: inline-block;
+    border: transparent;
+    padding: 4px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    background: #198754;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+}
+.lead-info-img{
+    display: inline-block;
+    border: transparent;
+    font-size: 17px;
+    padding: 4px 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    background: #198754;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+}
+.lead-info-img img{
+    padding: 2px;
+    border:1px solid #fff;
+    border-radius: 10px;
+    margin-right:-10px
+}
+
+.content {
+    display: flex;
+
+}
+
+.lead-table {
+    width: 90%;
+    /* Adjust the width of the table */
+    border-collapse: collapse;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.lead-table th {
+    padding: 15px;
+    text-align: left;
+    color: #1651B1;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.lead-table thead {
+    background-color: #217ac0 !important;
+}
+.lead-table td {
+    padding: 15px;
+    text-align: left;
+    color: #333;
+    border: 1px solid #ccc;
+
+}
+
+
+.comment-section {
+    width: 22%;
+    background-color: #e6e6e6;
+    padding: 15px;
+  
+}
+
+.comment-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #217ac0;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    /* Pure white background for the textarea */
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    /* Inset shadow for 3D effect */
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+textarea:focus {
+      background-color: #ffffff;
+      box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+      transition: all 0.2s ease-in-out;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* Optional: Set a max-width for the container */
+}
+
+.search-icon {
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 27px;
+    height: 27px;
+
+}
+
+.search-input {
+    width: 75%;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
+  inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+    
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
+  inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+}
+
+.search-input::placeholder {
+    color: #1249A4;
+    text-align: right;
+}
+
+
+.text-end {
+    text-align: right;
+    display: block;
+}
