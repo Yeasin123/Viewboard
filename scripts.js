@@ -64,3 +64,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial position of resizers
     updateResizers();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const settingsIcon = document.querySelector('.settings img');
+    const settingsMenu = document.querySelector('.settings-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    settingsIcon.addEventListener('click', function () {
+        settingsMenu.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', function () {
+        settingsMenu.classList.remove('active');
+    });
+});

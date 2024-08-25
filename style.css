@@ -1,7 +1,7 @@
 /* styles.css */
 body {
-     font-family: "League Spartan",
-     sans-serif;
+    font-family: "League Spartan",
+        sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,13 +10,15 @@ body {
     position: relative;
     width: 100%;
     padding: 13px 0;
-   
+
 }
-.settings{
+
+.settings {
     position: absolute;
-    top:25%;
-    right:2%;
+    top: 25%;
+    right: 2%;
 }
+
 .main-container {
     display: flex;
     height: 85vh;
@@ -40,9 +42,11 @@ body {
 .middle-section {
     width: 30%;
 }
-.last-middle-section{
+
+.last-middle-section {
     width: 30%;
 }
+
 .right-section {
     background-color: #f0f0f0;
     width: 10%;
@@ -62,17 +66,17 @@ button {
 }
 
 .contact-button {
-   width: 150px;
-   padding: 8px;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
-   background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
-   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-   color: white;
-   border: none;
-   border-radius: 10px;
-   cursor: pointer;
+    width: 150px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .script-button {
@@ -81,13 +85,14 @@ button {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background:#198754;
+    background: #198754;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
+
 .call-button {
     width: 150px;
     padding: 8px;
@@ -151,19 +156,21 @@ th {
     left: 70%;
 }
 
-.lead-status-button{
+.lead-status-button {
     height: 44px;
     flex-shrink: 0;
-    border:transparent;
-    color:#fff;
+    border: transparent;
+    color: #fff;
     border-radius: 10px;
     background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
-.lead-info{
+
+.lead-info {
     position: relative;
 }
+
 .fire-div {
     position: absolute;
     right: 23%;
@@ -183,7 +190,8 @@ th {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
-.lead-info-img{
+
+.lead-info-img {
     display: inline-block;
     border: transparent;
     font-size: 17px;
@@ -196,11 +204,12 @@ th {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
-.lead-info-img img{
+
+.lead-info-img img {
     padding: 2px;
-    border:1px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
-    margin-right:-10px
+    margin-right: -10px
 }
 
 .content {
@@ -229,6 +238,7 @@ th {
 .lead-table thead {
     background-color: #217ac0 !important;
 }
+
 .lead-table td {
     padding: 15px;
     text-align: left;
@@ -242,7 +252,7 @@ th {
     width: 22%;
     background-color: #e6e6e6;
     padding: 15px;
-  
+
 }
 
 .comment-section label {
@@ -263,17 +273,17 @@ textarea {
     background-color: #ffffff;
     /* Pure white background for the textarea */
     box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+        inset -4px -4px 10px rgba(255, 255, 255, 0.9);
     /* Inset shadow for 3D effect */
     outline: none;
     transition: all 0.2s ease-in-out;
 }
 
 textarea:focus {
-      background-color: #ffffff;
-      box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
-      inset -4px -4px 10px rgba(255, 255, 255, 0.9);
-      transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease-in-out;
 }
 
 .search-container {
@@ -305,18 +315,18 @@ textarea:focus {
     font-size: 14px;
     outline: none;
     box-sizing: border-box;
-  background-color: #ffffff;
-  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
-  inset -4px -4px 10px rgba(255, 255, 255, 0.9);
-  transition: all 0.2s ease-in-out;
-    
+    background-color: #ffffff;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease-in-out;
+
 }
 
 .search-input:focus {
-  background-color: #ffffff;
-  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
-  inset -4px -4px 10px rgba(255, 255, 255, 0.9);
-  transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease-in-out;
 }
 
 .search-input::placeholder {
@@ -358,6 +368,56 @@ textarea:focus {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
 
+.settings-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 95.3%;
+    background: linear-gradient(90deg, #198754 0%, #72cfa5 100%);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+}
 
+.settings-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 31%;
+}
+
+.settings-menu li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: transparent;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.settings-menu li a {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.settings-menu.active {
+    right: 0;
+}
+
+.close-btn {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1100;
 }
