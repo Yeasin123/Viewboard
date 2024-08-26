@@ -9,19 +9,19 @@ body {
 .header {
     position: relative;
     width: 100%;
-    padding: 13px 0;
+    padding: 8px 0;
 
 }
 
 .settings {
     position: absolute;
-    top: 25%;
+    top: 14%;
     right: 2%;
 }
 
 .main-container {
     display: flex;
-    height: 85vh;
+    max-height: 76.8vh;
     position: relative;
 }
 
@@ -29,7 +29,7 @@ body {
 .middle-section,
 .right-section,
 .last-middle-section {
-    border: 1.6px solid #ccc;
+    border: 2.6px solid #ccc;
     padding: 10px;
     overflow: auto;
     box-sizing: border-box;
@@ -66,8 +66,8 @@ button {
 }
 
 .contact-button {
-    width: 150px;
-    padding: 8px;
+    width: 114px;
+    padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -77,6 +77,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    /* line-height: 13px; */
 }
 
 .script-button {
@@ -85,7 +86,7 @@ button {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background: #198754;
+    background: #900C3F;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     color: white;
     border: none;
@@ -99,7 +100,7 @@ button {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background: #198754;
+    background: #900C3F;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     color: white;
     border: none;
@@ -148,6 +149,10 @@ th {
     z-index: 1;
 }
 
+.resizer:hover{
+     /* background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%); */
+}
+
 #resizer-left {
     left: 30%;
 }
@@ -176,6 +181,27 @@ th {
     right: 23%;
 }
 
+.call-div {
+    position: absolute;
+    right: 40%;
+    top: 5%;
+    
+   
+}
+.call-div button {
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 13px;
+    border: transparent;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+}
+
+.call-div img {
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 13px;
+    border: 2px solid #ccc;
+}
 
 .lead-info-text {
     width: 45%;
@@ -186,7 +212,7 @@ th {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 7px;
-    background: #198754;
+    background: #900C3F;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
@@ -200,7 +226,7 @@ th {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 7px;
-    background: #198754;
+    background: #900C3F;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
@@ -362,7 +388,7 @@ textarea:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: #198754;
+    background-color: #900C3F;
     font-weight: 700;
     color: white;
     border: none;
@@ -376,7 +402,7 @@ textarea:focus {
     right: -300px;
     width: 300px;
     height: 95.3%;
-    background: linear-gradient(90deg, #198754 0%, #72cfa5 100%);
+    background: linear-gradient(90deg, #900C3F 0%, #72cfa5 100%);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     padding: 20px;
     transition: right 0.4s ease;
@@ -420,4 +446,11 @@ textarea:focus {
     right: 20px;
     cursor: pointer;
     z-index: 1100;
+}
+
+.text-info-color {
+     background: linear-gradient(45deg, #ff6ec4, #7873f5);
+     -webkit-background-clip: text;
+     color: transparent;
+      font-weight: 700;
 }
