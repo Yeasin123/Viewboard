@@ -44,10 +44,15 @@ body {
 }
 
 .last-middle-section {
+    
     width: 30%;
 }
 
 .right-section {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
     background-color: #f0f0f0;
     width: 10%;
 }
@@ -81,12 +86,12 @@ button {
 }
 
 .script-button {
-    width: 150px;
-    padding: 8px;
+   width: 114px;
+   padding: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background: #900C3F;
+    background: #8e95c6;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     color: white;
     border: none;
@@ -95,12 +100,12 @@ button {
 }
 
 .call-button {
-    width: 150px;
-    padding: 8px;
+    width: 114px;
+    padding: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background: #900C3F;
+    background: #8e95c6;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     color: white;
     border: none;
@@ -193,7 +198,7 @@ th {
     padding: 6px 12px;
     border-radius: 13px;
     border: transparent;
-    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    background: #34a853;
 }
 
 .call-div img {
@@ -212,7 +217,7 @@ th {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 7px;
-    background: #900C3F;
+    background: #8e95c6;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
@@ -226,7 +231,7 @@ th {
     text-align: center;
     border-radius: 10px;
     margin-bottom: 7px;
-    background: #900C3F;
+    background: #8e95c6;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
 }
@@ -372,7 +377,7 @@ textarea:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+    background: #34a853;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
     color: white;
@@ -388,7 +393,7 @@ textarea:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: #900C3F;
+    background-color: #Fe482c;
     font-weight: 700;
     color: white;
     border: none;
@@ -402,7 +407,7 @@ textarea:focus {
     right: -300px;
     width: 300px;
     height: 95.3%;
-    background: linear-gradient(90deg, #900C3F 0%, #72cfa5 100%);
+    background: linear-gradient(90deg, #8e95c6 0%, #72cfa5 100%);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     padding: 20px;
     transition: right 0.4s ease;
