@@ -49,11 +49,11 @@ body {
 }
 
 .right-section {
-     position: absolute;
+     /* position: absolute;
      top: 0;
      right: 0;
      bottom: 0;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; */
     width: 10%;
 }
 
@@ -71,7 +71,7 @@ button {
 }
 
 .contact-button {
-    width: 114px;
+    width: 17%;
     padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -83,11 +83,28 @@ button {
     border-radius: 10px;
     cursor: pointer;
     /* line-height: 13px; */
+    
+}
+
+.contact-button-save {
+    width: 12%;
+    padding: 4px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: normal;
 }
 
 .script-button {
-   width: 114px;
-   padding: 3px;
+    width: 17%;
+    padding: 5px 0px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -97,11 +114,14 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 13px;
+    line-height: normal;
 }
+
 
 .call-button {
-    width: 114px;
-    padding: 3px;
+    width: 12%;
+    padding: 0px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -111,8 +131,9 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 13px;
+    line-height: normal;
 }
-
 .convert-button {
     width: 250px;
     padding: 8px;
@@ -175,6 +196,7 @@ th {
     background: linear-gradient(90deg, #2D7BFC 0%, #1249A4 100%);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     font-weight: 700;
+    width: 100%;
 }
 
 .lead-info {

@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const leftSection = document.querySelector('.left-section');
     const middleSection = document.querySelector('.middle-section');
     const lastMiddleSection = document.querySelector('.last-middle-section');
-    const resizerLeft = document.getElementById('resizer-left');
     const resizerMiddle = document.getElementById('resizer-middle');
 
     let isResizing = false;
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let resizer;
 
     function updateResizers() {
-        resizerLeft.style.left = leftSection.clientWidth + 'px';
         resizerMiddle.style.left = leftSection.clientWidth + middleSection.clientWidth + 'px';
     }
 
@@ -19,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         isResizing = true;
         lastDownX = e.clientX;
         resizer = resizerElem;
+
+        // Change the resizer color while dragging
+        resizer.style.backgroundColor = '#FF5733'; // Change this to your preferred color
 
         document.body.style.cursor = 'col-resize';
         document.addEventListener('mousemove', mouseMoveHandler);
@@ -28,17 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function mouseMoveHandler(e) {
         if (!isResizing) return;
 
-        const containerWidth = container.clientWidth - document.querySelector('.right-section').clientWidth; // Adjusted for right-section
+        const containerWidth = container.clientWidth - document.querySelector('.right-section').clientWidth;
 
-        if (resizer === resizerLeft) {
-            const newLeftWidth = e.clientX - container.offsetLeft;
-            leftSection.style.width = newLeftWidth + 'px';
-            middleSection.style.width = (containerWidth - newLeftWidth - lastMiddleSection.clientWidth) + 'px';
-        } else if (resizer === resizerMiddle) {
-            const newMiddleWidth = e.clientX - leftSection.clientWidth - container.offsetLeft;
-            middleSection.style.width = newMiddleWidth + 'px';
-            lastMiddleSection.style.width = (containerWidth - newMiddleWidth - leftSection.clientWidth) + 'px';
-        }
+        const newMiddleWidth = e.clientX - leftSection.clientWidth - container.offsetLeft;
+        middleSection.style.width = newMiddleWidth + 'px';
+        lastMiddleSection.style.width = (containerWidth - newMiddleWidth - leftSection.clientWidth) + 'px';
 
         updateResizers();
     }
@@ -46,13 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function mouseUpHandler() {
         isResizing = false;
         document.body.style.cursor = 'default';
+
+        // Revert the resizer color after dragging
+        resizer.style.backgroundColor = ''; // Resets to the original color
+
         document.removeEventListener('mousemove', mouseMoveHandler);
         document.removeEventListener('mouseup', mouseUpHandler);
     }
 
-    resizerLeft.addEventListener('mousedown', (e) => mouseDownHandler(e, resizerLeft));
     resizerMiddle.addEventListener('mousedown', (e) => mouseDownHandler(e, resizerMiddle));
 
-    // Initial position of resizers
+    // Initial position of resizer
     updateResizers();
 });
