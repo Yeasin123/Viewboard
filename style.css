@@ -21,7 +21,7 @@ body {
 
 .main-container {
     display: flex;
-    max-height: 76.8vh;
+    max-height: 74.8vh;
     position: relative;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .bottom-section {
-    height: 15vh;
+    height: 17vh;
     border: 1px solid #ccc;
     overflow: auto;
 }
@@ -304,14 +304,13 @@ th {
 .comment-section {
     width: 22%;
     background-color: #e6e6e6;
-    padding: 15px;
+    padding: 7px 15px 15px 15px;
 
 }
 
 .comment-section label {
     display: block;
     font-weight: bold;
-    margin-bottom: 10px;
     color: #217ac0;
 }
 
