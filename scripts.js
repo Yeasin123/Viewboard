@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         resizer = resizerElem;
 
         // Change the resizer color while dragging
-        resizer.style.backgroundColor = '#FF5733'; // Change this to your preferred color
+        resizer.style.backgroundColor = '#1650B0'; // Change this to your preferred color
 
         document.body.style.cursor = 'col-resize';
         document.addEventListener('mousemove', mouseMoveHandler);
@@ -53,4 +53,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial position of resizer
     updateResizers();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const settingsIcon = document.querySelector('.settings img');
+    const settingsMenu = document.querySelector('.settings-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    settingsIcon.addEventListener('click', function () {
+        settingsMenu.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', function () {
+        settingsMenu.classList.remove('active');
+    });
 });

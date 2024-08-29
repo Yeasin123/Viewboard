@@ -433,7 +433,7 @@ textarea:focus {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
     padding: 20px;
     transition: right 0.4s ease;
-    z-index: 1000;
+    z-index: 1026;
 }
 
 .settings-menu ul {
