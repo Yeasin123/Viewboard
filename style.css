@@ -30,11 +30,16 @@ body {
 .right-section,
 .last-middle-section {
     border: 2.6px solid #ccc;
-    padding: 10px;
+    padding: 10px ;
     overflow: auto;
     box-sizing: border-box;
 }
-
+.last-middle-section {
+    padding: 0px 10px 10px 10px;
+}
+.middle-section {
+    padding: 0px 10px 10px 10px;
+}
 .left-section {
     width: 30%;
 }
